@@ -197,3 +197,104 @@ a:hover {
   color: #e92322;
   border-bottom: 1px dashed #e92322;
 }
+
+
+/* 产品 */
+/* 上面的样式重构 */
+.wjs-product {
+  clear: both;
+  background-color: #eee;
+  padding: 5px;
+}
+
+.wjs-product .nav-tabs > li > a {
+  line-height: 50px;
+}
+
+.wjs-product .nav-tabs > li > a {
+  border: none;
+}
+
+.wjs-product .nav-tabs > li.active > a,
+.wjs-product .nav-tabs > li.active > a:focus,
+.wjs-product .nav-tabs > li.active > a:hover {
+  background-color: #eee;
+  border-bottom: 3px solid #e92322;
+  border-top: #eee;
+  border-left: #eee;
+  border-right: #eee;
+}
+
+/* 下面的内容展示 */
+.wjs-product .wjs-product-box {
+  height: 150px;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.wjs-product .wjs-product-box .wjs-product-box-item-left {
+  margin-right: 100px;
+  height: 150px;
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.wjs-product .wjs-product-box .wjs-product-box-item-left > .row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.wjs-product .wjs-product-box .wjs-product-box-item-left > p {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.wjs-product .wjs-product-box .wjs-product-box-item-left .row div:nth-of-type(2n-1) p {
+  text-align: left;
+}
+
+.wjs-product .wjs-product-box .wjs-product-box-item-left .row div:nth-of-type(2n) p {
+  text-align: right;
+}
+
+.wjs-product .wjs-product-box .wjs-product-box-item-right {
+  margin-top: 20px;
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  border-left: 1px dashed #ccc;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.wjs-product .wjs-product-box .wjs-product-box-item-right b {
+  font-size: 40px;
+  color: #e92322;
+}
+
+.wjs-product .wjs-product-box .wjs-product-box-item-right sub {
+  color: #e92322;
+  bottom: 0;
+}
+
+.wjs-product .wjs-product-box .wjs-product-box-item-right::before,
+.wjs-product .wjs-product-box .wjs-product-box-item-right::after {
+  content: '.';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #eee;
+  position: absolute;
+  left: -5px;
+}
+
+.wjs-product .wjs-product-box .wjs-product-box-item-right::before {
+  top: -5px;
+}
+
+.wjs-product .wjs-product-box .wjs-product-box-item-right::after {
+  bottom: -5px;
+}
