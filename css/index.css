@@ -156,3 +156,21 @@ a:hover {
   /*设置背景图片的大小*/
   background-size: cover;
 }
+
+
+/* 信息 */
+.wjs-info {
+  padding: 30px;
+}
+
+.wjs-info .row > div {
+  margin-top: 20px;
+}
+
+.wjs-info .row > div > a:hover {
+  color: #e92322;
+}
+
+.wjs-info .wjs_icon {
+  font-size: 30px;
+}

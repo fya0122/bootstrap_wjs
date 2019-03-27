@@ -7,7 +7,6 @@ $(function () {
       $(items).each(function (index, value) {
         var item = $(this);
         var imgSrc = item.data("largeImage");
-        debugger
         item.html($('<a href="javascript:;" class="pcImg"></a>').css("backgroundImage", "url('" + imgSrc + "')"));
       });
     } else {
