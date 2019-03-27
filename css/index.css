@@ -1,0 +1,158 @@
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+/* 顶部 */
+.wjs-header {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+  color: #e92322;
+}
+
+.wjs-header .row {
+  height: 100%;
+  text-align: center;
+}
+
+.wjs-header .row > div:nth-of-type(-n+3) {
+  border-right: 1px solid #ccc;
+}
+
+.wjs_code {
+  position: relative;
+  display: block;
+}
+
+.wjs_code > img {
+  display: none;
+  position: absolute;
+  top: 49px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.wjs_code:hover > img {
+  display: block;
+  z-index: 1;
+}
+
+.wjs-header .row > div:nth-last-of-type(1) .btn {
+  padding: 3px 15px;
+}
+
+.wjs-header .row > div:nth-last-of-type(1) .btn-danger {
+  background-color: #e92322;
+  border-color: #e92322;
+}
+
+.wjs-header .row > div:nth-last-of-type(1) .btn-link {
+  color: #333;
+}
+
+.wjs-header .row > div:nth-last-of-type(1) .btn-link:hover {
+  text-decoration: none;
+}
+
+
+/* nav */
+.wjs-nav .navbar-brand {
+  min-height: 80px;
+  line-height: 50px;
+}
+
+.wjs-nav .wjs_icon {
+  font-size: 40px;
+}
+
+.wjs-nav .wjs_icon:nth-of-type(1) {
+  color: #e92322;
+}
+
+.wjs-nav .wjs_icon:nth-of-type(2) {
+  color: #333;
+}
+
+.wjs-nav .navbar-nav li a {
+  display: block;
+  height: 80px;
+  line-height: 50px;
+  font-size: 16px;
+}
+
+
+.wjs-nav .navbar-nav > .active > a,
+.wjs-nav .navbar-nav > .active > a:focus,
+.wjs-nav .navbar-nav > .active > a:hover {
+  background: transparent;
+  border-bottom: 3px solid #e92322;
+}
+
+.wjs-nav .navbar-nav > li > a:hover,
+.wjs-nav .navbar-nav > li > a:focus {
+  color: #777;
+  background: transparent;
+  border-bottom: 3px solid #e92322;
+}
+
+@media screen and (max-width: 768px) {
+  .wjs-nav .navbar-nav li a {
+    display: block;
+    height: 50px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+
+  .wjs-nav .navbar-nav > .active > a,
+  .wjs-nav .navbar-nav > .active > a:focus,
+  .wjs-nav .navbar-nav > .active > a:hover {
+    background: transparent;
+    border-bottom: 1px solid #e92322;
+  }
+
+  .wjs-nav .navbar-nav > li > a:hover,
+  .wjs-nav .navbar-nav > li > a:focus {
+    color: #777;
+    background: transparent;
+    border-bottom: 1px solid #e92322;
+  }
+}
+
+.wjs-nav .navbar-toggle {
+  margin-top: 23px;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+
+/* 轮播 */
+.wjs-banner .mobileImg {
+  width: 100%;
+  display: block;
+}
+
+.wjs-banner .mobileImg > img {
+  width: 100%;
+  display: block;
+}
+
+.wjs-banner .pcImg {
+  width: 100%;
+  height: 410px;
+  display: block;
+  /*设置背景图片了*/
+  /*设置图片居中显示*/
+  background-position: center center;
+  /*设置背景图片的大小*/
+  background-size: cover;
+}
