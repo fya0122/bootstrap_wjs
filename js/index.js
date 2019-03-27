@@ -1,5 +1,9 @@
 $(function () {
-  // ★★★★★轮播图逻辑-开始
+
+
+
+
+  // ★★★★★轮播图逻辑
   var items = $('.carousel-inner .item')
   $(window).on('resize', function () {
     var width = $(window).width()
@@ -17,14 +21,30 @@ $(function () {
       })
     }
   }).trigger('resize')
-  // ★★★★★轮播图逻辑-结束
 
 
-
-
-
-  //  ★★★★★tip-开始
+  //  ★★★★★tip
   $('[data-toggle="tooltip"]').tooltip()
-  //  ★★★★★tip-结束
+
+
+  //  ★★★★★导航宽度计算
+  var ul = $('.wjs-product .nav-tabs')
+  var lis = ul.find('li')
+  var totalWidth = 0
+  lis.each(function (index, value) {
+    totalWidth = totalWidth + $(value).outerWidth(true)
+  })
+  ul.width(totalWidth)
+
+
+  //  ★★★★★使用插件iscroll
+  var myscroll = new IScroll('.tabs_parent', {
+    scrollX: true,
+    scrollY: false
+  })
+
+
+
+
 
 })
