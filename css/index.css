@@ -174,3 +174,26 @@ a:hover {
 .wjs-info .wjs_icon {
   font-size: 30px;
 }
+
+
+/* 预约 */
+.wjs-reverse {
+  height: 60px;
+  line-height: 60px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.wjs-reverse .wjs_icon {
+  font-size: 18px;
+  vertical-align: sub;
+}
+
+.wjs-reverse a:hover {
+  color: #e92322;
+}
+
+.wjs-reverse .reverse_now {
+  color: #e92322;
+  border-bottom: 1px dashed #e92322;
+}
