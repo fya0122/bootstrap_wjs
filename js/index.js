@@ -1,5 +1,5 @@
 $(function () {
-  // 轮播图逻辑
+  // ★★★★★轮播图逻辑-开始
   var items = $('.carousel-inner .item')
   $(window).on('resize', function () {
     var width = $(window).width()
@@ -17,8 +17,14 @@ $(function () {
       })
     }
   }).trigger('resize')
+  // ★★★★★轮播图逻辑-结束
 
 
 
+
+
+  //  ★★★★★tip-开始
+  $('[data-toggle="tooltip"]').tooltip()
+  //  ★★★★★tip-结束
 
 })

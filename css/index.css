@@ -298,3 +298,25 @@ a:hover {
 .wjs-product .wjs-product-box .wjs-product-box-item-right::after {
   bottom: -5px;
 }
+
+.wjs-product .wjs-product-box .wjs-product-box-item-right .wjs-tip {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+  width: 100%;
+}
+
+.wjs-product .wjs-product-box .wjs-product-box-item-right .wjs-tip span {
+  cursor: pointer;
+}
+
+.wjs-product .wjs-product-box .wjs-product-box-item-right .wjs-tip span:first-of-type {
+  color: #e92322;
+  border: 1px solid #e92322;
+}
+
+.wjs-product .wjs-product-box .wjs-product-box-item-right .wjs-tip span:last-of-type {
+  color: blue;
+  border: 1px solid blue;
+}
